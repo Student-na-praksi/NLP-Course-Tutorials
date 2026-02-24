@@ -127,7 +127,7 @@
 
 - single instruction, multiple data
 
-  <img src="figures/vector-computer.png.png" alt="Vector computer" width="60%">
+  <img src="figures/vector-computer.png" alt="Vector computer" width="35%">
 
 - first supercomputers, long and expensive development
 - data parallel problems, operate on vectors
@@ -154,7 +154,7 @@
 
 - multiple instructions, multiple data
 
-  <img src="figures/shared-memory-system-UMA.png" alt="Shared memory system (UMA)" width="60%">
+  <img src="figures/shared-memory-system-UMA.png" alt="Shared memory system (UMA)" width="35%">
 
 - have one or more processors with one or more cores
 - processors are connected to shared memory via a bus
@@ -173,7 +173,7 @@
 
 - multiple instructions, multiple data
 
-  <img src="figures/distributed-memory-system.png" alt="Distributed memory system" width="60%">
+  <img src="figures/distributed-memory-system.png" alt="Distributed memory system" width="35%">
 
 - processors have their own memory
 - other processors do not see memory changes
@@ -200,7 +200,7 @@
 
 - single instruction, multiple threads
 
-  <img src="figures/accelerator.png" alt="Accelerators (GPUs)" width="60%">
+  <img src="figures/accelerator.png" alt="Accelerators (GPUs)" width="35%">
 
 - offload processing
   - host sends data to accelerator
