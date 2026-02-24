@@ -33,7 +33,7 @@
 
 - Slovenia
   - VEGA (IZUM, Maribor), 10 PFLOPS, 30 mio. EUR
-  - new AI factory system (IZUM, Maribor), projected , 135 mio. EUR
+  - new AI factory system (IZUM, Maribor), projected approx. 100 PFLOPS (CPU 10%), 135 mio. EUR
   - goals
     - Upgrade existing HPC capabilities
     - Provide infrastructure for open research data
@@ -81,11 +81,11 @@
     - we all use the same HW (multi-core nodes with GPUs)
     - the system is well-maintained by professional admins (HW, SW installation)
     - you can access the cluster from anywhere
-    - you have valid access for the whole school year, you can use the systems for other courses as well (without reservation), for extension write to support@sling.si 
+    - you have valid access for the whole school year, you can use the systems for other courses as well (without reservation), for extension a mentor should write to support@sling.si
 
 ## Pervasive parallelism
 
-- von Neumann architecture: CPU, memory, I/Oß
+- von Neumann architecture: CPU, memory, I/O
 - for a long time (until 2004), the performance of computer systems increased through miniaturization (relays, vacuum tubes, increasingly smaller and more numerous transistors, raising the clock frequency) and improvements in hardware.
 - Dennard scaling applied: reducing the size of a transistor by half increases their number fourfold, each transistor operates twice as fast (shorter connections), while the amount of dissipated heat remains unchanged
 - characteristics of processors over time ([graph](https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/))
@@ -134,7 +134,45 @@ key limitations that led to multi‑core processors:
   - libraries that support parallelization
   - new programming languages with built‑in support for parallelism
 - solution
-  - to make good use of new architectures, we must write parallel programs ourselves
-  - new processors include mechanisms that can exploit parallel programs (hardware threads)
+  - to make good use of new architectures, we must write parallel programs
+  - new processors include mechanisms that can be efficiently run parallel programs (hardware threads)
   - to achieve good results, we must understand the architecture well
   - how to write code that will remain efficient on future processors
+
+## Historical trends
+
+- hardware is naturally parallel
+  - parallelism in hardware has been present since the earliest computers
+  - great sophistication in mainframe and vector supercomputers (late 1980)
+  
+- miniaturization
+  - Intel 4004 4-bit microprocessor with 2,300 transistors
+  - Today million times more transistors, a lot of potential
+  - Improvements over the years:
+    - word sizes,
+    - super-scalar capabilities, vector instructions, out-of-order execution, deep pipelines, parallel arithmetic units, hardware multithreading,
+    - caches, cache prefetching, virtual memory controllers, page table walking, memory access controllers,- graphics processing units
+
+- term supercomputer is first used during development of [Cray-1](https://en.wikipedia.org/wiki/Cray-1), 1976, 10 mio. USD, Los Alamos National Laboratory
+- at the end of seventies, they are introduced to petrol and automotive industry
+- in eighties they come to business world
+- Why?
+  - faster computations gives competitive advantage
+  - less experiments means cheaper development
+  - faster development of new products
+- first supercomputers were vector computers
+  - high price, slow development
+  - last machine in Slovenia: [CONVEX SP1000/XA-64](https://www.openpa.net/systems/convex_spp1000_spp1200_spp1600_cd-xa.html), 1992
+- today supercomputers are distributed computer systems
+  - massive production, faster development
+  - cheaper systems, step-by-step upgrade
+  - become most popular in nineties
+  - each core capable of approx. 10-20 GFLOPS/s
+  - [VEGA](https://en-vegadocs.vega.izum.si/architecture/)
+- modern parallel computers
+  - standard computer in institutes: DEC VAX 11/780, 1 MFLOPS
+  - 1981: Cosmic Cube: 64 Intel 8086 processors (XT), 5 – 10 MFLOPS, for a half of the DEC VAX price
+  - 1986: Connection Machine, Thinking Machine Corporation: 1 CPU, many ALUs
+  - 1994: Beowulf, NASA: 16 standard Intel DX processors connected to 10 Mbit Ethernet, Linux
+  - 1996: cluster for less than 50k USD is capable of 1 GFLOPS
+  - 2024: majority of top 10 supercomputers has large GPU partitions
