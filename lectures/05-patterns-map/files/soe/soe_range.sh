@@ -9,7 +9,6 @@
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=5:00
 #SBATCH --mem-per-cpu=2100
-#SBATCH --reservation=fri
 #SBATCH --array=0-3
 
 LOW=(         1  500000001 1000000001 1500000001)

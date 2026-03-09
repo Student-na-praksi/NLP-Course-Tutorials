@@ -9,6 +9,5 @@
 #SBATCH --ntasks-per-core=1
 #SBATCH --time=5:00
 #SBATCH --mem-per-cpu=2100
-#SBATCH --reservation=fri
 
 srun ./soe_chunks 1 2000000000 2000000

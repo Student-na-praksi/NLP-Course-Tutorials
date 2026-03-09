@@ -65,9 +65,7 @@
     - sources: [pimc.c](files/pimc/pimc.c) and [pisum.c](files/pimc/pisum.c)
     - scripts:
       - [pimc-1.sh](files/pimc/pimc-1.sh)
-      - [pimc-4.sh](files/pimc/pimc-4.sh) and ```[pisum-4.sh](files/pimc/pisum-4.sh)
-  
-  [solution](files/pimc)
+      - [pimc-4.sh](files/pimc/pimc-4.sh) and [pisum-4.sh](files/pimc/pisum-4.sh)
 
 ### The Mandelbrot set
 
@@ -126,7 +124,7 @@
 
 - demos
   - ```soe_basic```: one core, iterating over the whole range ([soe_basic.c](files/soe/soe_basic.c) and [soe_basic.sh](files/soe/soe_basic.sh))
-  - ```soe_chunk```: one core, sequentially chunk-by-chunk (([soe_chunks.c](files/soe/soe_chunks.c) and [soe_chunks.sh](files/soe/soe_chunks.sh)))
+  - ```soe_chunk```: one core, sequentially chunk-by-chunk ([soe_chunks.c](files/soe/soe_chunks.c) and [soe_chunks.sh](files/soe/soe_chunks.sh))
   - ```soe_range```: multi core, iterating over the whole range covered by a core ([soe_range.c](files/soe/soe_range.c) and [soe_range.sh](files/soe/soe_range.sh))
   - ```soe_range_chunk```: multi core, sequentially chunk-by-chunk ([soe_range_chunks.sh](files/soe/soe_range_chunks.sh))
 

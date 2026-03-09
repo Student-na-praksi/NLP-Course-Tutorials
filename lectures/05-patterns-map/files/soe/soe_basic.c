@@ -13,8 +13,7 @@ int main(int argc, char* argv[])
     list_min = 2;
     if (argc == 2)
         list_max = atol(argv[1]);
-    if (argc != 2 || list_max == 0 || list_max < list_min)
-    {
+    if (argc != 2 || list_max == 0 || list_max < list_min) {
         fprintf(stderr, "Bad arguments!\nUsage:\n\tsoe_basic <max>\n\n");
         return 1;        
     }
@@ -25,8 +24,7 @@ int main(int argc, char* argv[])
 
     // sieving
     prime = 2;
-    while (prime*prime <= list_max)
-    {
+    while (prime*prime <= list_max) {
         // tag multiplies
         i_start = prime*prime-list_min;
         for (i = i_start; i < list_size; i += prime)
@@ -37,15 +35,11 @@ int main(int argc, char* argv[])
     
     // write primes to file
     sprintf(filename, "primes_basic_%d_%d.txt", list_min, list_max);
-    if( (f = fopen(filename, "w")) != NULL )
-    {
+    if( (f = fopen(filename, "w")) != NULL ) {
         count = 0;
         for(i = 0; i < list_size; i++)
             if(list[i] == 0)
-            {
-//                fprintf(f, "%ld\n", i+list_min);
                 count++;
-            }
         fprintf(f, "----------\ninterval[%ld, %ld]\n%ld\n", list_min, list_max, count);
         fclose(f);
     }
