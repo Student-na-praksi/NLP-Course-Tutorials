@@ -62,10 +62,10 @@
     - a lot of overhead
     - better is to combine several shots to one task
   - solution
-    - sources: ```[pimc.c](files/pimc/pimc.c)``` and ```[pisum.c](files/pimc/pisum.c)```
-    - scripts: 
-      - ```[pimc-1.sh](files/pimc/pimc-1.sh)```
-      - ```[pimc-4.sh](files/pimc/pimc-4.sh)``` and ```[pisum-4.sh](files/pimc/pisum-4.sh)```
+    - sources: [pimc.c](files/pimc/pimc.c) and [pisum.c](files/pimc/pisum.c)
+    - scripts:
+      - [pimc-1.sh](files/pimc/pimc-1.sh)
+      - [pimc-4.sh](files/pimc/pimc-4.sh) and ```[pisum-4.sh](files/pimc/pisum-4.sh)
   
   [solution](files/pimc)
 
