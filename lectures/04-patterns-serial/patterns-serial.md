@@ -1,6 +1,6 @@
 # Programming Patterns
 
-## Pattern-based programming
+## Pattern-based Programming
 
 - Patterns are “best practices” for solving specific problems.
 - Patterns are universal, can be applied to any programming system.
