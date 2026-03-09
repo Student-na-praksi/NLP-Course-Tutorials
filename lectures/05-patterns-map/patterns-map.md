@@ -75,9 +75,9 @@
 
 - the Mandelbrot set (black) is the set of all points $c$ in the complex plane that do not go to infinity with iterations
   - algorithm
-    $$ z_0 = 0$$
-    $$ z_{k-1} = z_{k}^2 + c $$
-    $$ count(c) = \min_{0\leq k < K} (|z_k| \geq 2) $$
+
+    <img src="figures/mandelbrot-formula.png" alt="Mandelbrot set formulas">
+
   - Divergence for large z
   - Compute the function up to some maximum value K
 
