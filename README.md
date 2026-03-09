@@ -8,11 +8,18 @@
 
 - Week 01:
   - lectures:
-      [introduction](lectures/01-introduction/introduction.md),
-      [architectures](lectures/02-architectures/architectures.md)
+    [introduction](lectures/01-introduction/introduction.md),
+    [architectures](lectures/02-architectures/architectures.md)
   - labs: cancelled
 
 - Week 02:
   - lectures:
-      [cluster](lectures/03-cluster/cluster.md), [patterns](lectures/04-patterns/patterns.md)
-  - labs: [Arnes Cluster](labs/01-Arnes-Cluster/Arnes-Cluster.md)
+    [cluster](lectures/03-cluster/cluster.md), [serial patterns](lectures/04-patterns/pattern-serial.md)
+  - labs:
+    [Arnes Cluster](labs/01-Arnes-Cluster/Arnes-Cluster.md)
+
+- Week 03:
+  - lectures:
+    [pattern: map](lectures/04-patterns/pattern-map.md)
+  - labs:
+    
